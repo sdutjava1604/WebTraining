@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/me.css">
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+	#barr {
+		margin-top: 30px;
+	}
+</style>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">我的</h1>
+    </header>
+    <div class="mui-content">
+        <nav class="mui-bar mui-bar-tab" id="nav">
+            <a class="mui-tab-item mui-active" id="book">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">书屋</span>
+            </a>
+            <a class="mui-tab-item" id="group">
+                <span class="mui-icon mui-icon-phone"></span>
+                <span class="mui-tab-label">小组</span>
+            </a>
+            <a class="mui-tab-item" id="gathering">
+                <span class="mui-icon mui-icon-email"></span>
+                <span class="mui-tab-label">聚会</span>
+            </a>
+            <a class="mui-tab-item" id="config">
+                <span class="mui-icon mui-icon-gear"></span>
+                <span class="mui-tab-label">设置</span>
+            </a>
+            <a class="mui-tab-item" id="me" href="html/me/me.html">
+                <span class="mui-icon mui-icon-person"></span>
+                <span class="mui-tab-label">我的</span>
+            </a>
+        </nav>
+        <ul class="mui-table-view" id="barr">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate">
+                    <span class="mui-icon mui-icon-contact"> Shawn </span>
+                    <span class="mui-badge mui-badge-primary mui-badge-inverted">ID:00001</span>
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="./me_remind.html">
+                    <span class="mui-icon mui-icon-flag"></span>
+                    提醒
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view" id="ul2">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="./me_like.html">
+                    <span class="mui-icon mui-icon-star"></span>
+                    喜欢
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="me_diary.html">
+                    <span class="mui-icon mui-icon-compose"></span>
+                    日记
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="me_reading.html">
+                    读书
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view" id="ul2">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="me_wallet.html">
+                    钱包
+                </a>
+            </li>
+        </ul>
+        <div id="me_img">
+            B00K+
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById('book').addEventListener('tap', function () {
+            mui.openWindow({
+                url: "../book/book.html",
+                id: "book"
+            });
+        });
+        document.getElementById('group').addEventListener('tap', function () {
+            mui.openWindow({
+                url: "../group/group.html",
+                id: "group"
+            });
+        });
+        document.getElementById('config').addEventListener('tap', function () {
+            mui.openWindow({
+                url: "../config/config.html",
+                id: "config"
+            });
+        });
+        document.getElementById('me').addEventListener('tap', function () {
+            mui.openWindow({
+                url: "../me/me.html",
+                id: "me"
+            });
+        });
+        document.getElementById('gathering').addEventListener('tap', function () {
+            mui.openWindow({
+                url: "../gathering/gathering.html",
+                id: "gathering"
+            });
+        });
+    </script>
+</body>
+
+
+</html>

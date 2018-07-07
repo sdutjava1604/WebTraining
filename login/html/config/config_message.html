@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+    #ul1 {
+        margin-top: 25px;
+    }
+
+    #ul2,
+    #ul3,
+    #ul4,
+    #ul5 {
+        margin-top: 10px;
+    }
+
+    @font-face {
+        font-family: 'Bradley Hand ITC';
+        src: url('../../fonts/Bradley Hand ITC.TTF');
+    }
+	#li1 {
+		/*display: inline-block;*/
+	}
+    #me_img {
+        height: 200px;
+        width: 100%;
+        font-size: 50px;
+        font-family: "Bradley Hand ITC";
+        color: darkgrey;
+        text-align: center;
+        margin-top: 100px;
+    }
+</style>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">消息设置</h1>
+    </header>
+    <div class="mui-content">
+        <ul class="mui-table-view" id="ul1">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    兴趣精选
+                </a>
+                <div class="mui-switch mui-active">
+                    <div class="mui-switch-handle"></div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="mui-table-view" id="ul2">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        私信消息
+                    </a>
+                    <div class="mui-switch mui-active">
+                        <div class="mui-switch-handle"></div>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+        <ul class="mui-table-view" id="ul3">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    智能推送
+                </a>
+                <div class="mui-switch mui-active">
+                    <div class="mui-switch-handle"></div>
+                </div>
+            </li>
+        </ul>
+        <ul class="mui-table-view" id="ul4">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    我的日记被回复
+                </a>
+                <div class="mui-switch mui-active">
+                    <div class="mui-switch-handle"></div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="mui-content" style="padding-top: 50px;">
+        	<div class="mui-input-row mui-input-range" >
+        		<label>最大回复</label>
+        		<input type="range" min="0" max="30" id="range1">
+        	</div>
+        </div>
+        <div id="me_img">
+            B00K+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../css/gathering.css" />
+    <script type="text/javascript">
+        mui.init();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">聚会</h1>
+    </header>
+    <div class="mui-content">
+        <nav class="mui-bar mui-bar-tab" id="nav">
+            <a class="mui-tab-item mui-active" id="book">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">书屋</span>
+            </a>
+            <a class="mui-tab-item" id="group">
+                <span class="mui-icon mui-icon-phone"></span>
+                <span class="mui-tab-label">小组</span>
+            </a>
+            <a class="mui-tab-item" id="gathering">
+                <span class="mui-icon mui-icon-email"></span>
+                <span class="mui-tab-label">聚会</span>
+            </a>
+            <a class="mui-tab-item" id="config">
+                <span class="mui-icon mui-icon-gear"></span>
+                <span class="mui-tab-label">设置</span>
+            </a>
+            <a class="mui-tab-item" id="me" href="html/me/me.html">
+                <span class="mui-icon mui-icon-person"></span>
+                <span class="mui-tab-label">我的</span>
+            </a>
+        </nav>
+        <div class="mui-input-row mui-search">
+            <input type="search" class="mui-input-clear" placeholder="">
+        </div>
+
+        <div class="mui-row">
+            <div class="mui-col-sm-6 mui-col-xs-6">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="gathering_city.html">
+                        城市
+                    </a>
+                </li>
+            </div>
+            <div class="mui-col-sm-6 mui-col-xs-6">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="gathering_time.html">
+                        时段
+                    </a>
+                </li>
+            </div>
+        </div>
+
+
+        <div id="g1" class="gather">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        热门活动
+                    </a>
+                </li>
+            </ul>
+            <div class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../../images/gathering/3e494da28289c7b.jpg">
+                                    <div class="mui-media-body">MISA@城市草坪 瓦西里•彼得见面会</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/4d428141422314e.jpg">
+                                    <div class="mui-media-body">小说话剧《第二人》</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mui-slider-item">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/book/s29197698.jpg">
+                                    <div class="mui-media-body">树上春树粉丝交流会</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/102d32d598df5d4.jpg">
+                                    <div class="mui-media-body">同城三句话小说大赛</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mui-slider-item">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/3e494da28289c7b.jpg">
+                                    <div class="mui-media-body">MISA@城市草坪 瓦西里•彼得见面会</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/4d428141422314e.jpg">
+                                    <div class="mui-media-body">小说话剧《第二人》</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/book/s29197698.jpg">
+                                    <div class="mui-media-body">树上春树粉丝交流会</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/102d32d598df5d4.jpg">
+                                    <div class="mui-media-body">同城三句话小说大赛</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="g2" class="gather">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        书吧偶遇
+                    </a>
+                </li>
+            </ul>
+            <div class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/10a19b29ba8390c.jpg">
+                                    <div class="mui-media-body">苏州蠡墅书吧</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/34e9c9b58faea99.jpg">
+                                    <div class="mui-media-body">北京帨杏书吧</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mui-slider-item">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/4d428141422314e.jpg">
+                                    <div class="mui-media-body">上海稷安书吧</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/0b2bbc6723f5eb2.jpg">
+                                    <div class="mui-media-body">长沙温岭书吧</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mui-slider-item">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/10a19b29ba8390c.jpg">
+                                    <div class="mui-media-body">苏州蠡墅书吧</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/34e9c9b58faea99.jpg">
+                                    <div class="mui-media-body">北京帨杏书吧</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/4d428141422314e.jpg">
+                                    <div class="mui-media-body">上海稷安书吧</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/0b2bbc6723f5eb2.jpg">
+                                    <div class="mui-media-body">长沙温岭书吧</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="g3" class="gather">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        图书展览
+                    </a>
+                </li>
+            </ul>
+            <div class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/462cb186da32762.jpg">
+                                    <div class="mui-media-body"> 《悲情人物》发布会</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/5accb7bc483945f.jpg">
+                                    <div class="mui-media-body">看！这世界发布会</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mui-slider-item">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/75949c90c5ab60e.jpg">
+                                    <div class="mui-media-body">《西斯廷圣母·里昂》</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/7e8a418cf061c11.jpg">
+                                    <div class="mui-media-body">《达芬奇与鲁班》发布会</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mui-slider-item">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/462cb186da32762.jpg">
+                                    <div class="mui-media-body"> 《悲情人物》发布会</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/5accb7bc483945f.jpg">
+                                    <div class="mui-media-body">看！这世界发布会</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <ul class="mui-table-view mui-grid-view">
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/75949c90c5ab60e.jpg">
+                                    <div class="mui-media-body">《西斯廷圣母·里昂》</div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                                <a href="#">
+                                    <img class="mui-media-object" src="../../images/gathering/7e8a418cf061c11.jpg">
+                                    <div class="mui-media-body">《达芬奇与鲁班》发布会</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom">
+            ——我是有底线的——
+        </div>
+    </div>
+    <script type="text/javascript">
+    	document.getElementById('book').addEventListener('tap', function() {
+    		mui.openWindow({
+    			url: "../book/book.html",
+    			id : "book"
+    		});
+    	});
+    	document.getElementById('group').addEventListener('tap', function() {
+    		mui.openWindow({
+    			url: "../group/group.html",
+    			id : "group"
+    		});
+    	});
+    	document.getElementById('config').addEventListener('tap', function() {
+    		mui.openWindow({
+    			url: "../config/config.html",
+    			id : "config"
+    		});
+    	});
+    	document.getElementById('me').addEventListener('tap', function() {
+    		mui.openWindow({
+    			url: "../me/me.html",
+    			id : "me"
+    		});
+    	});
+    	document.getElementById('gathering').addEventListener('tap', function() {
+    		mui.openWindow({
+    			url: "../gathering/gathering.html",
+    			id : "gathering"
+    		});
+    	});
+    </script>
+</body>
+
+</html>

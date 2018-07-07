@@ -1,0 +1,23 @@
+#about {
+	height: 100px;
+	width: 100px;
+	background: blue;
+	float: left;
+	margin-left: 10px;
+}
+
+#bar {
+	height: 100px;
+	width: 100px;
+	background: #2AC845;
+	float: left;
+	margin-left: 10px;
+}
+
+#config_ul1 {
+	height: 100px;
+	width: 100px;
+	background: red;
+	float: left;
+	margin-left: 10px;
+}

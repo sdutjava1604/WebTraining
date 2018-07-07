@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+#ul1 {
+	margin-top: 10px;
+}
+.oDiv {
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	line-height: 100px;
+	color: gray;
+	font-size: 15px;
+}
+.fat {
+	height: 280px;
+	width: 100%;
+	position: relative;
+}
+.chd {
+	position: absolute;
+	height: 160px;
+	width: 160px;
+	background-image: url(../../images/attic.jpg);
+	background-size: cover;
+	margin-top: 60px;
+	left: 50%;
+	margin-left: -80px;
+	border-radius: 10px;
+}
+</style>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">关于我们</h1>
+    </header>
+    <div class="mui-content">
+        <div class="fat">
+        	<div class="chd">
+        		
+        	</div>
+        </div>
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate">
+                    客服电话
+					<span class="mui-badge mui-badge-inverted">010-123456</span>
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate">
+                    E-mail
+					<span class="mui-badge mui-badge-inverted">78952604@sina.com</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="mui-table-view" id="ul1">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    服务使用协议
+                </a>
+            </li>
+        </ul>
+		<div class="oDiv">
+			shawn 版权所有
+		</div>
+    </div>
+</body>
+
+</html>

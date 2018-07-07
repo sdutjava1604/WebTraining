@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/config.css">
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">设置</h1>
+    </header>
+    <br>
+    <div class="mui-content">
+		<nav class="mui-bar mui-bar-tab" id="nav">
+			<a class="mui-tab-item mui-active" id="book">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">书屋</span>
+			</a>
+			<a class="mui-tab-item" id="group">
+				<span class="mui-icon mui-icon-phone"></span>
+				<span class="mui-tab-label">小组</span>
+			</a>
+			<a class="mui-tab-item" id="gathering">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">聚会</span>
+			</a>
+			<a class="mui-tab-item" id="config">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+			<a class="mui-tab-item" id="me" href="html/me/me.html">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+        <ul class="mui-table-view" id="ul1">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="config_account.html">
+                    账号/绑定设置
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="config_message.html">
+                    <span class="mui-icon mui-icon-paperplane"></span>
+                    推送消息设置
+                </a>
+            </li>
+        </ul>
+        <div class="mes">
+            开启后，将收到精选内容和推送的活动。
+        </div>
+        <ul class="mui-table-view" id="ul2">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    软件升级
+                    <span class="mui-badge mui-badge-inverted">当前版本: 1.0.2</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view" id="ul3">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    清除缓存
+                    <span class="mui-badge mui-badge-primary" id="bar1">45.8MB</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view" id="ul4">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="config_us.html">
+                    关于我们
+                </a>
+            </li>
+        </ul>
+        <div id="me_img">
+            B00K+
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    document.getElementById("ul2").addEventListener('tap', function () {
+        mui.alert('您使用的已是最新版本', '版本更新提示', function () {});
+    });
+	document.getElementById("ul3").addEventListener('tap', function () {
+		mui.alert('缓存已清理完毕', '清理提示', function () {});
+		document.getElementById('bar1').style.display = "none";
+	});
+</script>
+<script type="text/javascript">
+		document.getElementById('book').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../book/book.html",
+				id : "book"
+			});
+		});
+		document.getElementById('group').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../group/group.html",
+				id : "group"
+			});
+		});
+		document.getElementById('config').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../config/config.html",
+				id : "config"
+			});
+		});
+		document.getElementById('me').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../me/me.html",
+				id : "me"
+			});
+		});
+		document.getElementById('gathering').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../gathering/gathering.html",
+				id : "gathering"
+			});
+		});
+	</script>
+</html>

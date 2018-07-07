@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+	@font-face {
+		font-family: 'Bradley Hand ITC';
+		src: url('../../fonts/Bradley Hand ITC.TTF');
+	}
+    #me_img {
+        height: 200px;
+        width: 100%;
+        font-size: 50px;
+        font-family: "Bradley Hand ITC";
+        color: darkgrey;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+</style>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">我的提醒</h1>
+    </header>
+    <div class="mui-content">
+        <ul class="mui-table-view" >
+        				<li class="mui-table-view-cell" id="l1">
+        					<a class="mui-navigate-right">
+        						人文地理
+        						 <span class="mui-badge mui-badge-red" id="bar">3</span>
+        					</a>
+        				</li>
+        				<li class="mui-table-view-cell" id="l2">
+        					<a class="mui-navigate-right">
+        						 科技
+        						 <span class="mui-badge mui-badge-red" id="bar1">10</span>
+        					</a>
+        				</li>
+        				<li class="mui-table-view-cell">
+        					<a class="mui-navigate-right">
+        						 白帽子
+        					</a>
+        				</li>
+        				<li class="mui-table-view-cell" id="l3">
+        					<a class="mui-navigate-right">
+        						汪曾祺
+        						<span class="mui-badge mui-badge-red" id="bar2">84</span>
+        					</a>
+        				</li>
+        				<li class="mui-table-view-cell" id="l4">
+        					<a class="mui-navigate-right">
+        						毛姆
+        						<span class="mui-badge mui-badge-red" id="bar3">12</span>
+        					</a>
+        				</li>
+        				<li class="mui-table-view-cell">
+        					<a class="mui-navigate-right">
+        						奇幻
+        					</a>
+        				</li>
+        				<li class="mui-table-view-cell" id="l5">
+        					<a class="mui-navigate-right">
+        						周氏兄弟
+        						<span class="mui-badge mui-badge-red" id="bar4">8</span>
+        					</a>
+        				</li>
+        			</ul>
+        
+        <div id="me_img">
+            B00K+
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+	document.getElementById("l1").addEventListener('tap', function () {
+		document.getElementById('bar').style.display = "none";
+	});
+	document.getElementById("l2").addEventListener('tap', function () {
+		document.getElementById('bar1').style.display = "none";
+	});
+	document.getElementById("l3").addEventListener('tap', function () {
+		document.getElementById('bar2').style.display = "none";
+	});
+	document.getElementById("l4").addEventListener('tap', function () {
+		document.getElementById('bar3').style.display = "none";
+	});
+	document.getElementById("l5").addEventListener('tap', function () {
+		document.getElementById('bar4').style.display = "none";
+	});
+	document.getElementById("l1").addEventListener('tap', function () {
+		document.getElementById('bar').style.display = "none";
+	});
+</script>
+</html>

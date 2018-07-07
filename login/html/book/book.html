@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../css/book.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">书屋</h1>
+    </header>
+    <div class="mui-content">
+		<nav class="mui-bar mui-bar-tab" id="nav">
+			<a class="mui-tab-item mui-active" id="book">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">书屋</span>
+			</a>
+			<a class="mui-tab-item" id="group">
+				<span class="mui-icon mui-icon-phone"></span>
+				<span class="mui-tab-label">小组</span>
+			</a>
+			<a class="mui-tab-item" id="gathering">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">聚会</span>
+			</a>
+			<a class="mui-tab-item" id="config">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+			<a class="mui-tab-item" id="me">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<div class="mui-input-row mui-search">
+			<input type="search" class="mui-input-clear" placeholder="">
+		</div>
+		
+        <ul class="mui-table-view" id="ul1">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="../config/config.html"">
+                    今日推荐
+					<span class="mui-badge mui-badge-success">5</span>
+                </a>
+            </li>
+        </ul>
+        <div id="slider" class="mui-slider">
+            <div class="mui-slider-group mui-slider-loop">
+                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="../../images/book/wljs.jpg">
+                    </a>
+                </div>
+                <!-- 第一张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../../images/book/yw.jpg">
+                    </a>
+                </div>
+                <!-- 第二张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../../images/book/1.jpg">
+                    </a>
+                </div>
+                <!-- 第三张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../../images/book/lryh.jpg">
+                    </a>
+                </div>
+                <!-- 第四张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../../images/book/wljs.jpg">
+                    </a>
+                </div>
+                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="../../images/book/yw.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="mui-slider-indicator">
+                <div class="mui-indicator mui-active"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+            </div>
+        </div>
+        <br>
+
+        <ul class="mui-table-view" id="ul2">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    最受关注的教育类图书
+					<span class="mui-badge mui-badge-primary mui-badge-inverted">12</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/55d34469N85515d46.jpg">
+                    <div class="mui-media-body">陶行知教育文集</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/rBEhU1IIWQcIAAAAAAMry7016hsAAB9nANs1WAAAyvj503.jpg">
+                    <div class="mui-media-body">高效课堂</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/58b8476dNe49b57ca.jpg">
+                    <div class="mui-media-body">速度灵敏反应训练</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/5a49a3a2Nd8462558.jpg">
+                    <div class="mui-media-body">教育的本质</div>
+                </a>
+            </li>
+
+        </ul>
+        <br>
+
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    最受关注的人文社科类图书
+					<span class="mui-badge mui-badge-primary mui-badge-inverted">14</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/5681e1d2N95832e97.jpg">
+                    <div class="mui-media-body">俗世奇人</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/rBEHaFCkkLYIAAAAAACFEgAUSwwAAC0NQISNYsAAIUq351.jpg">
+                    <div class="mui-media-body">行者无疆</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/596d7e33N9905ab5d.png">
+                    <div class="mui-media-body">北鸢</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/5abaf4b3Nf7ab97f2.jpg">
+                    <div class="mui-media-body">自控力</div>
+                </a>
+            </li>
+
+        </ul>
+
+        <ul class="mui-table-view" id="ul3">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    最受关注的经管类图书
+					<span class="mui-badge mui-badge-primary mui-badge-inverted">6</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/564d709dN23f407c1.jpg">
+                    <div class="mui-media-body">power up</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/57d76ea1N225097bf.jpg">
+                    <div class="mui-media-body">掌控</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/57f9fbc7N5426da3e.jpg">
+                    <div class="mui-media-body">蜥蜴脑法则</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/5857972dN6a86cee4.jpg">
+                    <div class="mui-media-body">微信营销与运营</div>
+                </a>
+            </li>
+
+        </ul>
+        <br>
+
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    最受关注的文学类图书
+					<span class="mui-badge mui-badge-primary mui-badge-inverted">8</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/54645fd6Ne99fd2f4.jpg">
+                    <div class="mui-media-body">黄金时代</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/589c257dN5affc2ec.jpg">
+                    <div class="mui-media-body">它</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/5ad0637cN697b7802.jpg">
+                    <div class="mui-media-body">红楼梦</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/5afd38abNc7b2ce0a.jpg">
+                    <div class="mui-media-body">上帝杯中的羔羊</div>
+                </a>
+            </li>
+
+        </ul>
+        <br>
+
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    最受关注的艺术科技类图书
+					<span class="mui-badge mui-badge-primary mui-badge-inverted">10</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view mui-grid-view">
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/58cfc53dNab885b0c.jpg">
+                    <div class="mui-media-body">今日艺术</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/5923980eNe8befb47.jpg">
+                    <div class="mui-media-body">科技之巅</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/592bf164Ndd92657c.jpg">
+                    <div class="mui-media-body">禅与摩托车维修的艺术</div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                <a href="#">
+                    <img class="mui-media-object" src="../../images/book/5a37332dN72934532.jpg">
+                    <div class="mui-media-body">极限创新</div>
+                </a>
+            </li>
+        </ul>
+		<div id="bottom">
+			——我是有底线的——
+		</div>
+    </div>
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+	<script type="text/javascript" src="../../js/mui.js">
+		
+	</script>
+	<script type="text/javascript">
+		document.getElementById('book').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../book/book.html",
+				id : "book"
+			});
+		});
+		document.getElementById('group').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../group/group.html",
+				id : "group"
+			});
+		});
+		document.getElementById('config').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../config/config.html",
+				id : "config"
+			});
+		});
+		document.getElementById('me').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../me/me.html",
+				id : "me"
+			});
+		});
+		document.getElementById('gathering').addEventListener('tap', function() {
+			mui.openWindow({
+				url: "../gathering/gathering.html",
+				id : "gathering"
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Bradley Hand ITC';
+    src: url('../../fonts/Bradley Hand ITC.TTF');
+}
+#me_img {
+	height: 50px;
+	width: 100%;
+	font-size: 50px;
+	font-family: "Bradley Hand ITC";
+	color: darkgrey;
+	text-align: center;
+	margin-top: 100px;
+}
+#ul2 {
+	margin-top: 20px;
+}

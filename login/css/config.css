@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Bradley Hand ITC';
+    src: url('../../fonts/Bradley Hand ITC.TTF');
+}
+
+#ul1 {
+    margin-top: 10px;
+}
+
+#ul2 {
+    margin-top: 10px;
+}
+
+#ul3 {
+    margin-top: 10px;
+}
+
+#ul4 {
+    margin-top: 10px;
+    color: orangered;
+}
+
+.mes {
+    font-size: 13px;
+    text-indent: 2em;
+    font-family: "agency fb";
+}
+
+#me_img {
+    height: 200px;
+    width: 100%;
+    font-size: 50px;
+    font-family: "Bradley Hand ITC";
+    color: darkgrey;
+    text-align: center;
+    margin-top: 100px;
+}
